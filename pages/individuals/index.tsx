@@ -1,16 +1,18 @@
+import {useEffect, useState} from 'react';
 import Layout from '../../components/Layout';
 import FundraiserCard from '../../components/FundraiserCard';
+import { BASE_URL } from '../../components/constant';
 import Link from 'next/link';
 import React,{Fragment} from 'react';
 import { NextPage } from 'next';
 
-const BASE_URL =  process.env.NEXT_PUBLIC_SERVER;
-
-interface Prop {
-  data:any
+interface Props {
+   data:any
 }
 
-const  individuals:NextPage<Prop> = ({data}) => {
+const  Individuals:NextPage<Props> = ({data}) => {
+   //const [data, setdata] = useState<any>([]);
+
   return (
     <Layout
     title='Individuals'
@@ -53,4 +55,4 @@ export async function getServerSideProps() {
   }
 }
 
-export default individuals;
+export default Individuals;
