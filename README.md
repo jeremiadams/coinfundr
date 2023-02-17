@@ -23,5 +23,5 @@ Users can also search for fundraisers they want to donate too.
 * React/Nextjs
 * Wagmi and Alchemy 
 * Typescript
-* Tailwindcss 
+* Tailwind Css 
 * Material UI
